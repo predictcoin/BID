@@ -1,0 +1,26 @@
+{
+  "name": "hardhat-project",
+  "scripts": {
+    "test": "hardhat test",
+    "coverage": "hardhat coverage --testfiles 'test/sample-test.js'",
+    "compile": "hardhat compile",
+    "deploy": "npx hardhat run --network bscmainnet scripts/deploy.js",
+    "deploy:testnet": "npx hardhat run --network bsctestnet scripts/deploy.js"
+  },
+  "dependencies": {
+    "hardhat": "^2.4.3",
+    "@nomiclabs/hardhat-ethers": "^2.0.2",
+    "@nomiclabs/hardhat-etherscan": "^2.1.2",
+    "@nomiclabs/hardhat-waffle": "^2.0.1",
+    "@openzeppelin/contracts": "^3.4.0-solc-0.7",
+    "@openzeppelin/test-helpers": "^0.5.6",
+    "@tenderly/hardhat-tenderly": "^1.0.11",
+    "@truffle/hdwallet-provider": "1.2.6",
+    "dotenv": "^8.2.0",
+    "ethereum-waffle": "^3.2.0",
+    "ethers": "^5.0.0",
+    "hardhat-ethers": "^1.0.1",
+    "hardhat-etherscan": "^1.0.1",
+    "hardhat-tenderly": "^1.0.1"
+  }
+}
